@@ -6,27 +6,15 @@ namespace cscollections
     {
         static void Main(string[] args)
         {
-            // initialize array
-            string[] daysOfWeek = {
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            };
+            string filePath = @"C:\Projects\tutorials\cscollections\Pop by Largest Final.csv";
+            CsvReader reader = new CsvReader(filePath);
 
-            foreach (string day in daysOfWeek)
+            Country[] countries = reader.ReadFirstNCountries(10);
+
+            foreach (Country country in countries)
             {
-                Console.WriteLine(day);
+                Console.WriteLine($"{country.Population}: {country.Name}");
             }
-
-            Console.WriteLine("Which day of the week?");
-            int iDay = int.Parse(Console.ReadLine());
-
-            string chosenDay = daysOfWeek[iDay - 1];
-            Console.WriteLine($"That day is {chosenDay}");
         }
     }
 }
