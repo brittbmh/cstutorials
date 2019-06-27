@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace cscollections
+namespace cscountries
 {
     class CsvReader
     {

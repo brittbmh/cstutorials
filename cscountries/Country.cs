@@ -1,4 +1,4 @@
-namespace cscollections
+namespace cscountries
 {
     class Country
     {

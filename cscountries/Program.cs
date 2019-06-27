@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace cscollections
+namespace cscountries
 {
     class Program
     {
