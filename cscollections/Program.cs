@@ -21,6 +21,12 @@ namespace cscollections
             {
                 Console.WriteLine(day);
             }
+
+            Console.WriteLine("Which day of the week?");
+            int iDay = int.Parse(Console.ReadLine());
+
+            string chosenDay = daysOfWeek[iDay - 1];
+            Console.WriteLine($"That day is {chosenDay}");
         }
     }
 }
